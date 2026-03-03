@@ -35,7 +35,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero"> 
+        <!-- Background Carousel -->
+<div class="hero-bg-carousel">
+    <img src="images/hero1.jpg" class="bg-slide active">
+    <img src="images/hero2.jpg" class="bg-slide">
+    <img src="images/hero3.jpg" class="bg-slide">
+</div>
     <div class="container">
         <div class="hero-content" style="display: flex; align-items: center; justify-content: space-between; gap: 60px; flex-wrap: wrap;">
 
@@ -129,6 +135,38 @@
 
         </div>
     </div>
+        <style>
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg-carousel {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.bg-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    filter: brightness(0.4); /* Faded Effect */
+}
+
+.bg-slide.active {
+    opacity: 1;
+}
+
+/* Ensure hero content stays above background */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+</style>
 </section>
     <!-- Services Section -->
     <section id="services" class="services">
@@ -356,7 +394,7 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <p>Email: <a href="mailto:bookings.ruqlabgames@gmai.com" class="footer-link">bookings.ruqlabgames@gmai.com</a></p>
+                    <p>Email: <a href="mailto:bookings.ruqlabgames@gmai.com" class="footer-link">bookings.ruqlabgames@gmail.com</a></p>
                     <p>Phone: <a href="tel:09042809939" class="footer-link">+234 904 280 9939</a></p>
                 </div>
             </div>
@@ -367,5 +405,17 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+const slides = document.querySelectorAll('.bg-slide');
+let current = 0;
+
+function changeSlide() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+}
+
+setInterval(changeSlide, 5000); // Change every 5 seconds
+</script>
 </body>
 </html>
