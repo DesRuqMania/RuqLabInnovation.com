@@ -36,87 +36,100 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text animate-fade-in-up">
-                    <div class="accent-bar"></div>
-                    <h1>Smart, Scalable Digital Solutions</h1>
-                    <p>We specialize in computer programming, consultancy, and technology services that deliver real results. Transform your vision into powerful digital products.</p>
-                    <div class="hero-buttons">
-                        <a href="mailto:bookings.ruqlabgames@gmai.com" class="btn btn-primary">
-                            Start Your Project
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </a>
-                        <button onclick="scrollToSection('services')" class="btn btn-secondary">
-                            Explore Services
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
+    <div class="container">
+        <div class="hero-content" style="display: flex; align-items: center; justify-content: space-between; gap: 60px; flex-wrap: wrap;">
+
+            <!-- LEFT SIDE -->
+            <div class="hero-text animate-fade-in-up" style="flex: 1; min-width: 320px;">
+                <div class="accent-bar"></div>
+
+                <h1 style="font-size: 52px; line-height: 1.2; margin-bottom: 20px;">
+                    Smart, Scalable Digital Solutions
+                </h1>
+
+                <p style="font-size: 18px; line-height: 1.7; max-width: 520px; margin-bottom: 35px;">
+                    We specialize in computer programming, consultancy, and technology services 
+                    that deliver real results. Transform your vision into powerful digital products.
+                </p>
+
+                <div class="hero-buttons" style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    
+                    <a href="mailto:bookings.ruqlabgames@gmail.com" class="btn btn-primary">
+                        Start Your Project
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+
+                    <button onclick="scrollToSection('services')" class="btn btn-secondary">
+                        Explore Services
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+
                 </div>
-                        <div class="hero-visual animate-slide-in-right" 
-     style="display: flex; justify-content: center; align-items: center;">
-
-    <div class="code-block" 
-         style="
-            background: #0F0F0F;
-            color: #ffffff;
-            padding: 90px;
-            border-radius: 24px;
-            width: 900px;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
-            font-family: 'Courier New', monospace;
-            font-size: 36px;
-            line-height: 1.8;
-         ">
-
-        <div class="code-line">
-            <span style="color:#1DD1A1;">&lt;</span>
-            <span style="color:#54a0ff;">innovation</span>
-            <span style="color:#1DD1A1;">&gt;</span>
-        </div>
-
-        <div class="code-line indent-1" style="margin-left: 60px;">
-            <span style="color:#888;">{ </span>
-            <span style="color:#a29bfe;">code</span>
-            <span style="color:#888;">: </span>
-            <span style="color:#1DD1A1;">'excellence'</span>
-            <span style="color:#888;"> }</span>
-        </div>
-
-        <div class="code-line indent-1" style="margin-left: 60px;">
-            <span style="color:#888;">{ </span>
-            <span style="color:#a29bfe;">design</span>
-            <span style="color:#888;">: </span>
-            <span style="color:#1DD1A1;">'scalable'</span>
-            <span style="color:#888;"> }</span>
-        </div>
-
-        <div class="code-line indent-1" style="margin-left: 60px;">
-            <span style="color:#888;">{ </span>
-            <span style="color:#a29bfe;">results</span>
-            <span style="color:#888;">: </span>
-            <span style="color:#1DD1A1;">'measurable'</span>
-            <span style="color:#888;"> }</span>
-        </div>
-
-        <div class="code-line">
-            <span style="color:#1DD1A1;">&lt;/</span>
-            <span style="color:#54a0ff;">innovation</span>
-            <span style="color:#1DD1A1;">&gt;</span>
-        </div>
-
-    </div>
-</div>
-                       </div>
             </div>
-        </div>
-    </section>
 
+            <!-- RIGHT SIDE -->
+            <div class="hero-visual animate-slide-in-right" 
+                 style="flex: 1; min-width: 320px; display: flex; justify-content: center;">
+
+                <div class="code-block" style="
+                    background: #0F0F0F;
+                    padding: 50px;
+                    border-radius: 18px;
+                    max-width: 520px;
+                    width: 100%;
+                    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+                    font-family: 'Courier New', monospace;
+                    font-size: 18px;
+                    line-height: 1.8;
+                ">
+
+                    <div>
+                        <span style="color:#1DD1A1;">&lt;</span>
+                        <span style="color:#54a0ff;">innovation</span>
+                        <span style="color:#1DD1A1;">&gt;</span>
+                    </div>
+
+                    <div style="margin-left: 25px;">
+                        <span style="color:#888;">{ </span>
+                        <span style="color:#a29bfe;">code</span>
+                        <span style="color:#888;">: </span>
+                        <span style="color:#1DD1A1;">'excellence'</span>
+                        <span style="color:#888;"> }</span>
+                    </div>
+
+                    <div style="margin-left: 25px;">
+                        <span style="color:#888;">{ </span>
+                        <span style="color:#a29bfe;">design</span>
+                        <span style="color:#888;">: </span>
+                        <span style="color:#1DD1A1;">'scalable'</span>
+                        <span style="color:#888;"> }</span>
+                    </div>
+
+                    <div style="margin-left: 25px;">
+                        <span style="color:#888;">{ </span>
+                        <span style="color:#a29bfe;">results</span>
+                        <span style="color:#888;">: </span>
+                        <span style="color:#1DD1A1;">'measurable'</span>
+                        <span style="color:#888;"> }</span>
+                    </div>
+
+                    <div>
+                        <span style="color:#1DD1A1;">&lt;/</span>
+                        <span style="color:#54a0ff;">innovation</span>
+                        <span style="color:#1DD1A1;">&gt;</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
