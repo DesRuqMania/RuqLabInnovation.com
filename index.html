@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RuqLabInnovations - Smart, scalable, and results-driven digital solutions. Specializing in computer programming, consultancy, and technology services.">
+    <meta name="theme-color" content="#1DD1A1">
+    <title>RuqLabInnovations - Tech Solutions & Programming Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo-section">
+                <img src="logo.png" alt="RuqLabInnovations" class="logo">
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <button class="nav-link" onclick="scrollToSection('services')">Services</button>
+                <button class="nav-link" onclick="scrollToSection('features')">Why Us</button>
+                <button class="nav-link" onclick="scrollToSection('contact')">Contact</button>
+                <a href="mailto:bookings.ruqlabgames@gmai.com" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate-fade-in-up">
+                    <div class="accent-bar"></div>
+                    <h1>Smart, Scalable Digital Solutions</h1>
+                    <p>We specialize in computer programming, consultancy, and technology services that deliver real results. Transform your vision into powerful digital products.</p>
+                    <div class="hero-buttons">
+                        <a href="mailto:bookings.ruqlabgames@gmai.com" class="btn btn-primary">
+                            Start Your Project
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <button onclick="scrollToSection('services')" class="btn btn-secondary">
+                            Explore Services
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-visual animate-slide-in-right">
+                    <div class="code-block">
+                        <div class="code-line"><span class="code-green">&lt;</span><span class="code-blue">innovation</span><span class="code-green">&gt;</span></div>
+                        <div class="code-line indent-1"><span class="code-gray">{ </span><span class="code-purple">code</span><span class="code-gray">: </span><span class="code-green">'excellence'</span><span class="code-gray"> }</span></div>
+                        <div class="code-line indent-1"><span class="code-gray">{ </span><span class="code-purple">design</span><span class="code-gray">: </span><span class="code-green">'scalable'</span><span class="code-gray"> }</span></div>
+                        <div class="code-line indent-1"><span class="code-gray">{ </span><span class="code-purple">results</span><span class="code-gray">: </span><span class="code-green">'measurable'</span><span class="code-gray"> }</span></div>
+                        <div class="code-line"><span class="code-green">&lt;/</span><span class="code-blue">innovation</span><span class="code-green">&gt;</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="accent-bar"></div>
+                <h2>Our Services</h2>
+                <p>Comprehensive technology solutions designed to accelerate your business growth</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card animate-fade-in-up" style="animation-delay: 0s;">
+                    <div class="service-icon service-icon-1">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Computer Programming</h3>
+                    <p>Custom software development with modern technologies. From web applications to enterprise systems, we build scalable solutions tailored to your needs.</p>
+                    <div class="service-link">
+                        Learn more
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="service-card animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="service-icon service-icon-2">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="1"></circle>
+                            <path d="M12 1v6m0 6v6"></path>
+                            <path d="M4.22 4.22l4.24 4.24m2.12 2.12l4.24 4.24"></path>
+                            <path d="M1 12h6m6 0h6"></path>
+                            <path d="M4.22 19.78l4.24-4.24m2.12-2.12l4.24-4.24"></path>
+                        </svg>
+                    </div>
+                    <h3>Tech Consultancy</h3>
+                    <p>Strategic technology guidance to transform your business. We help you navigate digital transformation and optimize your tech stack.</p>
+                    <div class="service-link">
+                        Learn more
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="service-card animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="service-icon service-icon-3">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                        </svg>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Accelerate your systems and applications. We identify bottlenecks and implement solutions that deliver measurable performance gains.</p>
+                    <div class="service-link">
+                        Learn more
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="service-card animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="service-icon service-icon-4">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Team Augmentation</h3>
+                    <p>Extend your development capacity with skilled professionals. Our team works seamlessly with yours to deliver exceptional results.</p>
+                    <div class="service-link">
+                        Learn more
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="accent-bar"></div>
+                <h2>Why Choose RuqLabInnovations</h2>
+                <p>We combine expertise, innovation, and dedication to deliver exceptional results</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card animate-fade-in-up" style="animation-delay: 0s;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-icon">
+                        <path d="M6 9L12 15L22 4"></path>
+                        <path d="M20 4H4C2.9 4 2 4.9 2 6V20C2 21.1 2.9 22 4 22H20C21.1 22 22 21.1 22 20V6C22 4.9 21.1 4 20 4Z"></path>
+                    </svg>
+                    <h3>Smart Solutions</h3>
+                    <p>Intelligent approaches to complex problems</p>
+                </div>
+
+                <div class="feature-card animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-icon">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <h3>Scalable Architecture</h3>
+                    <p>Built for growth and future expansion</p>
+                </div>
+
+                <div class="feature-card animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-icon">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                    </svg>
+                    <h3>Results-Driven</h3>
+                    <p>Focused on measurable business outcomes</p>
+                </div>
+
+                <div class="feature-card animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-icon">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <h3>Expert Team</h3>
+                    <p>Experienced professionals with proven track records</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Let's discuss how RuqLabInnovations can help you achieve your technology goals.</p>
+            <a href="mailto:bookings.ruqlabgames@gmai.com" class="btn btn-white">Get in Touch Today</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="accent-bar"></div>
+                <h2>Get In Touch</h2>
+                <p>We're here to help. Reach out and let's start a conversation.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info animate-slide-in-left">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22 6 12 13 2 6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:bookings.ruqlabgames@gmai.com">bookings.ruqlabgames@gmai.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:09042809939">+234 904 280 9939</a>
+                        </div>
+                    </div>
+
+                    <div class="business-hours">
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+
+                <form class="contact-form animate-slide-in-right" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.png" alt="RuqLabInnovations" class="footer-logo">
+                    <p>Smart, scalable, and results-driven digital solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><button onclick="scrollToSection('services')" class="footer-link">Services</button></li>
+                        <li><button onclick="scrollToSection('features')" class="footer-link">Why Us</button></li>
+                        <li><button onclick="scrollToSection('contact')" class="footer-link">Contact</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: <a href="mailto:bookings.ruqlabgames@gmai.com" class="footer-link">bookings.ruqlabgames@gmai.com</a></p>
+                    <p>Phone: <a href="tel:09042809939" class="footer-link">+234 904 280 9939</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RuqLabInnovations. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
