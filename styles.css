@@ -34,6 +34,7 @@ h1 {
     font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: -0.02em;
+   color: #0F0F0F;
 }
 
 h2 {
@@ -240,7 +241,7 @@ p {
         width: 100%;
     }
 
-    h1 {
+     {
         font-size: 2.5rem;
     }
 
@@ -298,7 +299,7 @@ p {
     justify-content: center;
 }
 
-.hero-text h1 {
+.hero-text  {
     margin-bottom: 1.5rem;
     color: #0F0F0F;
 }
